@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@plugin 'daisyui' {
+  themes: light --default;
+}
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.active {
+  border-bottom: 3px solid green;
+}
+
+.btn-1 {
+  @apply rounded-lg bg-green-800 text-white;
+}
+
+.hero-bg-1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./assets/images/herobg-1.jpg");
+  height: 900px;
+}
+.hero-bg-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./assets/images/herobg-2.jpg");
+  height: 900px;
+}
+.hero-bg-3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./assets/images/herobg-3.jpg");
+  height: 900px;
+}
+.hero-bg-4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./assets/images/herobg4.jpg");
+  height: 900px;
+}
