@@ -21,6 +21,16 @@
   @apply rounded-lg bg-green-800 text-white;
 }
 
+.about-bg-1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(3, 36, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./assets/images/herobg-1.jpg");
+  height: 900px;
+}
 .hero-bg-1 {
   background-image: linear-gradient(
       to bottom,
@@ -29,7 +39,7 @@
       rgba(0, 0, 0, 1)
     ),
     url("./assets/images/herobg-1.jpg");
-  height: 900px;
+  height: 730px;
 }
 .hero-bg-2 {
   background-image: linear-gradient(
@@ -39,7 +49,7 @@
       rgba(0, 0, 0, 1)
     ),
     url("./assets/images/herobg-2.jpg");
-  height: 900px;
+  height: 730px;
 }
 .hero-bg-3 {
   background-image: linear-gradient(
@@ -49,7 +59,7 @@
       rgba(0, 0, 0, 1)
     ),
     url("./assets/images/herobg-3.jpg");
-  height: 900px;
+  height: 730px;
 }
 .hero-bg-4 {
   background-image: linear-gradient(
@@ -59,5 +69,5 @@
       rgba(0, 0, 0, 1)
     ),
     url("./assets/images/herobg4.jpg");
-  height: 900px;
+  height: 730px;
 }

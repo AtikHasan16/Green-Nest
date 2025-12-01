@@ -6,6 +6,7 @@ import { AuthContext } from "../Contexts/Context/AuthContext";
 import { toast } from "react-toastify";
 import Loading from "./Loading";
 import { ClockLoader } from "react-spinners";
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const { currentUser, logOutUser, loading } = useContext(AuthContext);
@@ -35,6 +36,22 @@ const Navbar = () => {
           className={"btn rounded-lg border-none text-green-900 text-lg"}
         >
           My Profile
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/about"}
+          className={"btn rounded-lg border-none text-green-900 text-lg"}
+        >
+          About Us
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/contact"}
+          className={"btn rounded-lg border-none text-green-900 text-lg"}
+        >
+          Contact Us
         </NavLink>
       </li>
     </>
@@ -68,9 +85,12 @@ const Navbar = () => {
             </div>
             <Link
               to={"/"}
-              className="btn md:btn-xl btn-ghost text-2xl text-green-800"
+              className="btn md:btn-xl btn-ghost text-2xl text-green-800 flex justify-center items-center"
             >
-              Green Nest
+              <figure className="w-10">
+                <img src={logo} alt="" />
+              </figure>
+              reen Nest
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">

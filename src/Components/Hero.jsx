@@ -24,7 +24,7 @@ const Hero = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="hero-bg-1 text-white text-center pt-30 md:pt-120 pb-10  space-y-6 poppins bg-cover ">
+          <div className="hero-bg-1 text-white text-center pt-30 md:pt-80 pb-10  space-y-6 poppins bg-cover ">
             <h1 className="text-6xl font-bold font-bebas">
               "Mist Me Softly: Embrace the Shade."
             </h1>
@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="hero-bg-2 text-white text-center pt-30 md:pt-120 pb-10  space-y-6 poppins bg-cover ">
+          <div className="hero-bg-2 text-white text-center pt-30 md:pt-80 pb-10  space-y-6 poppins bg-cover ">
             <h1 className="text-6xl font-bold font-bebas">
               "Filtered Light, Forest Floor Delight."
             </h1>
@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="hero-bg-3 text-white text-center pt-30 md:pt-120 pb-10   space-y-6 poppins bg-cover ">
+          <div className="hero-bg-3 text-white text-center pt-30 md:pt-80 pb-10   space-y-6 poppins bg-cover ">
             <h1 className="text-6xl font-bold font-bebas">
               "Keep Me Damp: The Art of Stillness."
             </h1>
@@ -84,7 +84,7 @@ const Hero = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="hero-bg-4 text-white text-center pt-30 md:pt-120 pb-10 space-y-6 poppins bg-cover ">
+          <div className="hero-bg-4 text-white text-center pt-30 md:pt-80 pb-10 space-y-6 poppins bg-cover ">
             <h1 className="text-6xl font-bold font-bebas">
               "Leafy Layers: A Tapestry of Shade."
             </h1>

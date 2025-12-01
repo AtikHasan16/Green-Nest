@@ -11,6 +11,8 @@ import Loading from "../Components/Loading";
 import PrivateRouter from "./PrivateRouter";
 import GuestRouter from "./GuestRouter";
 import ForgetPass from "../Pages/ForgetPass";
+import About from "../Pages/About";
+import Contact from "../Pages/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ export const router = createBrowserRouter([
             <MyProfile></MyProfile>,
           </PrivateRouter>
         ),
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
       },
       {
         path: "/details/:id",

@@ -1,10 +1,23 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaPinterest } from "react-icons/fa";
+import logo from "../assets/images/logo.png";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
     <div>
       <footer className="footer footer-horizontal   footer-center bg-green-800 p-10 poppins text-white">
+        <div>
+          <Link
+            to={"/"}
+            className="btn md:btn-xl text-white bg-transparent border-none shadow-none text-4xl flex justify-center items-center"
+          >
+            <figure className="w-15">
+              <img src={logo} alt="" />
+            </figure>
+            reen Nest
+          </Link>
+        </div>
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>

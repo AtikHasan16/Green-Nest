@@ -9,7 +9,7 @@ import EcoDecorIdeas from "../Components/EcoDecor";
 
 const Home = () => {
   const plantData = useLoaderData();
-  const plantDataSliced = plantData.slice(0, 6);
+  const plantDataSliced = plantData.slice(0, 4);
   //   console.log(plantDataSliced);
   return (
     <>
@@ -18,12 +18,14 @@ const Home = () => {
         <div>
           <Hero></Hero>
         </div>
-        <div className="my-5 md:my-20">
-          <h1 className="text-4xl font-bold text-center">
-            Top Rated Indoor Plants
-          </h1>
+        <div className="my-5 md:my-10 ">
+          <div className="font-bebas">
+            <h1 className="text-5xl font-bebas text-center mb-12 text-green-800">
+              Top Rated Indoor Plants
+            </h1>
+          </div>
           <Container className={"px-4"}>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 my-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-6 ">
               {plantDataSliced.map((data) => (
                 <PlantCard key={data.plantId} data={data}></PlantCard>
               ))}

@@ -8,7 +8,11 @@ const PlantCard = ({ data }) => {
     <div>
       <div className="card bg-base-100 shadow-lg shadow-gray-300 h-fit transition duration-300 hover:scale-105">
         <figure className="h-60">
-          <img src={image} alt="plants" />
+          <img
+            src={image}
+            className="object-cover w-full h-full"
+            alt="plants"
+          />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{plantName}</h2>
