@@ -1,7 +1,13 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaPinterest } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+} from "react-icons/fa";
 import logo from "../assets/images/logo.png";
-import { Link } from "react-router";
+import { Link, Links } from "react-router";
 
 const Footer = () => {
   return (
@@ -19,20 +25,29 @@ const Footer = () => {
           </Link>
         </div>
         <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Privacy</a>
+          <Link to={"/about"} className="link link-hover">
+            About us
+          </Link>
+          <Link to={"/profile"} className="link link-hover">
+            My Profile
+          </Link>
+          <Link to={"/contact"} className="link link-hover">
+            Contact
+          </Link>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">
-            <a>
-              <FaInstagram size={30}></FaInstagram>
+            <a
+              href="https://www.linkedin.com/in/hasan-md-atik/"
+              target="_blank"
+            >
+              <FaLinkedin size={30}></FaLinkedin>
             </a>
-            <a>
+            <a href="https://www.facebook.com/MDAtikhasannaeem" target="_blank">
               <FaFacebook size={30}></FaFacebook>
             </a>
-            <a>
-              <FaPinterest size={30}></FaPinterest>
+            <a href="https://github.com/AtikHasan16" target="_blank">
+              <FaGithub size={30}></FaGithub>
             </a>
           </div>
         </nav>
