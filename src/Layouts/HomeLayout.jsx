@@ -16,9 +16,8 @@ const HomeLayout = () => {
       <footer>
         <Footer></Footer>
       </footer>
-      <div>
-
-      <GoTop></GoTop>
+      <div className="hidden md:block">
+        <GoTop></GoTop>
       </div>
     </>
   );

@@ -6,7 +6,7 @@ const PlantCard = ({ data }) => {
   const { plantName, price, rating, image, plantId } = data;
   return (
     <div>
-      <div className="card bg-base-100 shadow-lg shadow-gray-300 h-fit transition duration-300 hover:scale-105">
+      <div className="card bg-base-100 shadow-lg shadow-gray-300 h-fit transition duration-300 hover:scale-105 poppins">
         <figure className="h-60">
           <img
             src={image}
@@ -16,8 +16,8 @@ const PlantCard = ({ data }) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title">{plantName}</h2>
-          <p className="flex items-center font-bold"> Price : ${price}</p>
-          <p className="flex items-center font-bold gap-1">
+          <p className="flex items-center font-semibold"> Price : ${price}</p>
+          <p className="flex items-center font-semibold gap-1">
             {" "}
             Ratings : {rating}
             <BiStar size={16}></BiStar>

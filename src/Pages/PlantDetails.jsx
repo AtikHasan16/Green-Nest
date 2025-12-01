@@ -34,20 +34,20 @@ const PlantDetailPage = () => {
       <title>GreenNest - Plant Details</title>
       <div className="min-h-screen  poppins py-16">
         <div className="container mx-auto px-4">
-          <div className="bg-white p-8 rounded-xl shadow-2xl  transition hover:scale-102 duration-500">
+          <div className="  transition">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
               <div className="col-span-2">
                 <img
                   src={image}
                   alt={plantName}
-                  className="w-full border-5 border-green-800 h-auto rounded-xl shadow-lg object-cover"
+                  className="w-full h-194 rounded-xl shadow-lg object-cover"
                 />
               </div>
 
               {/* RIGHT COLUMN: DETAILS AND FORM */}
               <div className="lg:col-span-2 space-y-8">
                 {/* PLANT DETAILS */}
-                <div>
+                <div className="bg-white p-8 rounded-2xl">
                   <h1 className="text-4xl font-bold text-green-900 mb-4">
                     {plantName}
                   </h1>
@@ -68,7 +68,7 @@ const PlantDetailPage = () => {
                   </p>
 
                   {/* STOCK AND STATIC INFO */}
-                  <div className="space-y-3 p-4 bg-gray-100 rounded-lg">
+                  <div className="space-y-3 p-4  rounded-lg">
                     <p
                       className={`font-semibold ${
                         !availableStock ? "text-red-600" : "text-green-700"
@@ -90,7 +90,7 @@ const PlantDetailPage = () => {
                       <strong>Provider:</strong> {plantData.providerName}
                     </p>
                   </div>
-                  <div className="space-y-3 p-4 my-4 bg-gray-100 rounded-lg">
+                  <div className="space-y-3 p-4 my-4  rounded-lg">
                     <h1 className="text-xl font-bold text-center text-green-800">
                       Quick Care Guide Essentials
                     </h1>

@@ -52,11 +52,7 @@ export const router = createBrowserRouter([
         path: "/details/:id",
         loader: () => fetch("/plants.json"),
         hydrateFallbackElement: <Loading></Loading>,
-        element: (
-          <PrivateRouter>
-            <PlantDetails></PlantDetails>,
-          </PrivateRouter>
-        ),
+        element: <PlantDetails></PlantDetails>,
       },
       {
         path: "/login",
