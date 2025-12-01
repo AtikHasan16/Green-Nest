@@ -71,3 +71,7 @@
     url("./assets/images/herobg4.jpg");
   height: 730px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
