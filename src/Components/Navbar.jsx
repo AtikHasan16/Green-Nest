@@ -66,9 +66,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="border-b-2 border-gray-300">
+    <div className="">
       <Container>
-        <div className="navbar poppins py-3 ">
+        <div className="navbar poppins py-3">
           <div className="navbar-start">
             <div className="dropdown ">
               <div
@@ -87,7 +87,7 @@ const Navbar = () => {
             </div>
             <Link
               to={"/"}
-              className="btn md:btn-xl btn-ghost text-2xl text-green-800 flex justify-center items-center"
+              className="btn md:btn-xl bg-transparent border-none shadow-none text-2xl text-green-800 flex justify-center items-center"
             >
               <figure className="w-10">
                 <img src={logo} alt="" />
