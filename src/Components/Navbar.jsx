@@ -30,14 +30,16 @@ const Navbar = () => {
           Plants
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to={"/profile"}
-          className={"btn rounded-lg border-none text-green-900 text-lg"}
-        >
-          My Profile
-        </NavLink>
-      </li>
+      {currentUser && (
+        <li>
+          <NavLink
+            to={"/profile"}
+            className={"btn rounded-lg border-none text-green-900 text-lg"}
+          >
+            My Profile
+          </NavLink>
+        </li>
+      )}
       <li>
         <NavLink
           to={"/about"}

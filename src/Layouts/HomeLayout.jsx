@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 const HomeLayout = () => {
   return (
     <>
-      <header>
+      <header className="sticky">
         <Navbar></Navbar>
       </header>
       <main className="md:bg-gray-100">
