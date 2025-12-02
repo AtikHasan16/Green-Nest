@@ -36,13 +36,13 @@ const Plants = () => {
     <>
       <title>GreenNest - Plants</title>
 
-      <div className="p-4 md:p-10">
+      <div className="p-4 md:p-10 ">
         <Container>
           <h1 className="text-7xl font-bold font-bebas text-green-800 mt-5 mb-10 text-center">
             Choose Your Plant
           </h1>
 
-          <div className="flex flex-col lg:flex-row gap-8">
+          <div className="flex flex-col lg:flex-row gap-8 poppins">
             {/* Sort Card - Left Side */}
             <div className="lg:w-64 ">
               <div className="bg-white rounded-xl shadow-lg p-6 sticky top-24">
@@ -109,7 +109,7 @@ const Plants = () => {
                 {/* Reset Button */}
                 <button
                   onClick={() => setSort("")}
-                  className="w-full btn-1 py-2 font-semibold hover:bg-green-900 transition-all rounded-lg"
+                  className="w-full btn-1 py-2  hover:bg-green-900 transition-all rounded-lg"
                 >
                   Reset Filters
                 </button>
