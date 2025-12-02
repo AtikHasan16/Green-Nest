@@ -8,7 +8,7 @@ const PlantCareTips = () => {
 
       {/* PLANT CARE TIPS SECTION */}
       <Container>
-        <section className=" py-5 md:py-20 poppins">
+        <section className=" py-5 poppins">
           <div className="container mx-auto px-4">
             <h2 className="text-5xl font-bebas text-center mb-12 text-green-800">
               Essential Care Tips for Shade Lovers

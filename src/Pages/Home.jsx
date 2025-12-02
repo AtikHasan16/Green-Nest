@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../Components/Hero";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import PlantCard from "../Components/PlantCard";
 import Container from "../Components/Container";
 import PlantCareTips from "../Components/PlantCareTips";
@@ -29,6 +29,14 @@ const Home = () => {
               {plantDataSliced.map((data) => (
                 <PlantCard key={data.plantId} data={data}></PlantCard>
               ))}
+            </div>
+            <div className="my-10 flex justify-center">
+              <Link
+                to={"/plants"}
+                className="btn text-white bg-green-800 btn-xl rounded-lg btn-wide"
+              >
+                View All
+              </Link>
             </div>
           </Container>
         </div>
