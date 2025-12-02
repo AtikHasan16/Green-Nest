@@ -65,7 +65,10 @@ const Contact = () => {
       </section>
 
       {/* Contact Info Section */}
-      <section className="py-16 md:py-24 px-4 bg-gray-50">
+      <section className=" md:pt-10  pb-14 px-4 bg-gray-50">
+        <h2 className="font-bebas text-5xl md:text-6xl text-green-900 mb-6 text-center">
+          Get In touch
+        </h2>
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             {contactInfo.map((info, index) => (
