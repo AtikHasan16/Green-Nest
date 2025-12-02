@@ -12,7 +12,8 @@ import { PiMemberOf } from "react-icons/pi";
 
 const MyProfile = () => {
   // 2. --- Use your actual AuthContext here ---
-  const { currentUser, updateUserProfile } = useContext(AuthContext);
+  const { currentUser, updateUserProfile, deleteCurrentUser } =
+    useContext(AuthContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +31,15 @@ const MyProfile = () => {
         toast.error(error.code);
       });
   };
-
+  const handleDeleteAccount = () => {
+    deleteCurrentUser()
+      .then(() => {
+        toast.info("Profile deleted successful");
+      })
+      .catch((error) => {
+        toast.error(error.code);
+      });
+  };
   return (
     <>
       <title>GreenNest - Profile</title>
@@ -122,6 +131,13 @@ const MyProfile = () => {
               Update Profile
             </button>
           </form>
+          <button
+            onClick={handleDeleteAccount}
+            type="button"
+            className="btn btn-1 btn-block py-6"
+          >
+            Delete Account
+          </button>
         </div>
       </div>
     </>
