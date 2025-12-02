@@ -63,7 +63,7 @@ const ErrorPage = () => {
               onClick={() => navigate("/")}
               className="btn bg-green-800 text-white btn-lg rounded-lg"
             >
-              Back to Home
+              Back to Home →
             </button>
           </div>
 

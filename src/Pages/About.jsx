@@ -47,9 +47,9 @@ const About = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-16 md:py-24 px-4">
+      <section className="py-16 md:py-10 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="font-bebas text-5xl md:text-6xl text-green-900 mb-6">
               Our Mission
             </h2>
