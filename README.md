@@ -1,6 +1,6 @@
 # 🌿 GreenNest – Indoor Plant Care & Store
 
-**Live Link:** [https://green-nest-planet.web.app](https://green-nest-planet.web.app)
+**Live Link:** [https://green-nest-planet.netlify.app/](https://green-nest-planet.netlify.app/)
 
 GreenNest is a beautifully designed single-page web application (SPA) for plant lovers who wish to create greener, healthier, and more aesthetic living spaces. The platform helps users explore indoor plant collections, learn plant care tips, and book consultations with plant experts — all in one place.
 
