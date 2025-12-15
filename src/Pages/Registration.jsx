@@ -38,7 +38,7 @@ const Registration = () => {
         updateUserProfile(userName, userPhoto, email)
           .then(() => {
             setLoading(false);
-            toast.success("Welcome to Green Nest ");
+            toast.success("Welcome to Green Earth ");
             navigate("/");
           })
           .catch((error) => {
@@ -60,7 +60,7 @@ const Registration = () => {
     googleLogin()
       .then(() => {
         setLoading(false);
-        toast.success("Welcome to Green Nest ");
+        toast.success("Welcome to Green Earth ");
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
@@ -72,12 +72,12 @@ const Registration = () => {
 
   return (
     <>
-      <title>GreenNest - Sign Up</title>
+      <title>Green Earth - Sign Up</title>
       <div className="md:min-h-[calc(100dvh-70px)]  md:bg-gray-100 flex items-center justify-center poppins">
         <div className="bg-white p-8 md:p-10 rounded-xl md:shadow-2xl w-full max-w-lg mx-4">
           {/* Title */}
           <h2 className="text-4xl font-bebas text-center text-green-800 mb-8">
-            Join Green Nest
+            Join Green Earth
           </h2>
 
           {/* Registration Form */}

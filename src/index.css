@@ -25,7 +25,7 @@
   background-image: linear-gradient(
       to bottom,
       rgb(3, 36, 0),
-      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 1)
     ),
     url("./assets/images/herobg-1.jpg");
@@ -35,7 +35,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(255, 0, 0, 0),
-      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 1)
     ),
     url("./assets/images/herobg-1.jpg");
@@ -45,7 +45,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(255, 0, 0, 0),
-      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 1)
     ),
     url("./assets/images/herobg-2.jpg");
@@ -55,7 +55,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(255, 0, 0, 0),
-      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 1)
     ),
     url("./assets/images/herobg-3.jpg");
@@ -65,7 +65,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(255, 0, 0, 0),
-      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 1)
     ),
     url("./assets/images/herobg4.jpg");

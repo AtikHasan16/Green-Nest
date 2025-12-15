@@ -19,7 +19,9 @@ const PlantDetailPage = () => {
   // console.log(plantData);
 
   const showSuccessToast = (name) => {
-    toast.success(`Consultation booked for ${name}! Check your email.`);
+    toast.success(
+      `Consultation booked for ${name}! We are redirecting you to the form`
+    );
   };
 
   const handleSubmit = (e) => {
@@ -27,11 +29,23 @@ const PlantDetailPage = () => {
     const clientName = e.target.name.value;
     showSuccessToast(clientName);
     e.target.reset();
+
+    setTimeout(() => {
+      window.open("https://forms.gle/q8BXPiYXtxn3C4Ce7");
+    }, 3000);
+  };
+
+  const handleBuyNow = () => {
+    window.open("https://forms.gle/BHQf8vf8LNrwNG2M9");
+  };
+
+  const handleDonateNow = () => {
+    window.open("https://forms.gle/y5ZnBfsBp4LTJQpF9");
   };
 
   return (
     <>
-      <title>GreenNest - Plant Details</title>
+      <title>Green Earth - Plant Details</title>
       <div className="min-h-screen  poppins py-16">
         <div className="container mx-auto px-4">
           <div className="  transition">
@@ -124,6 +138,21 @@ const PlantDetailPage = () => {
                         fertilizer at half-strength once per month. Stop feeding
                         completely in the fall and winter.
                       </p>
+                    </div>
+                    <div className="flex justify-center space-x-4 items-center">
+                      <button
+                        onClick={handleBuyNow}
+                        className=" btn btn-1 w-1/2 py-6"
+                      >
+                        Buy Now
+                      </button>
+
+                      <button
+                        onClick={handleDonateNow}
+                        className=" btn btn-1 w-1/2 py-6"
+                      >
+                        Donate Now
+                      </button>
                     </div>
                   </div>
                 </div>

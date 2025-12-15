@@ -13,6 +13,7 @@ import GuestRouter from "./GuestRouter";
 import ForgetPass from "../Pages/ForgetPass";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
+import BeVolunteer from "../Pages/BeVolunteer";
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/be-volunteer",
+        element: <BeVolunteer></BeVolunteer>,
       },
       {
         path: "/details/:id",

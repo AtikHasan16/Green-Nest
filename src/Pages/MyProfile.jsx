@@ -42,11 +42,11 @@ const MyProfile = () => {
   };
   return (
     <>
-      <title>GreenNest - Profile</title>
+      <title>Green Earth - Profile</title>
       <div className=" md:p-10 flex items-center justify-center poppins ">
         <div className="md:border-4 border-green-800 rounded-4xl bg-white p-10 w-2xl">
           <h2 className="text-4xl font-bebas text-center text-green-800 mb-8">
-            Green Nest Profile
+            Green Earth Profile
           </h2>
 
           {/* Profile Display Section */}

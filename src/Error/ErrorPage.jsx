@@ -72,7 +72,7 @@ const ErrorPage = () => {
             {`Error code 404 || ${error.message || error.data}`}
           </p>
           <p className="text-gray-500 text-sm my-2">
-            Contact us at support@greennest.com if you need help
+            Contact us at support@greenearth.com if you need help
           </p>
         </div>
       </div>

@@ -14,7 +14,7 @@ const contactInfo = [
   {
     icon: "✉️",
     title: "Email Us",
-    content: "support@greennest.com",
+    content: "support@greenearth.com",
   },
   {
     icon: "🕐",

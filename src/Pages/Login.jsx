@@ -44,7 +44,7 @@ const Login = () => {
     googleLogin()
       .then(() => {
         setLoading(false);
-        toast.success("Welcome to Green Nest ");
+        toast.success("Welcome to Green Earth ");
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
@@ -55,11 +55,11 @@ const Login = () => {
 
   return (
     <>
-      <title>GreenNest - Login</title>
+      <title>Green Earth - Login</title>
       <div className="min-h-[calc(100dvh-150px)] flex items-center justify-center poppins">
         <div className="bg-white p-8 md:py-10 rounded-xl shadow-2xl w-full max-w-md mx-4">
           <h2 className="text-4xl font-bebas text-center text-green-800 mb-8">
-            Green Nest Login
+            Green Earth Login
           </h2>
 
           {/* Login Form */}

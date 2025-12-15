@@ -24,12 +24,12 @@ const Hero = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="hero-bg-1 text-white text-center pt-30 md:pt-80 pb-10  space-y-6 poppins bg-cover ">
-            <h1 className="text-6xl font-bold font-bebas">
+          <div className="hero-bg-1 text-white text-center pt-40 md:pt-80 pb-10  space-y-3 poppins bg-cover ">
+            <h1 className="text-3xl font-bold font-bebas">
               "Mist Me Softly: Embrace the Shade."
             </h1>
-            <h2 className="text-2xl md:text-4xl font-bold">Maidenhair Fern</h2>
-            <p className="w-8/12 mx-auto overflow-hidden md:text-xl">
+            <h2 className="text-xl  font-bold">Maidenhair Fern</h2>
+            <p className="w-8/12 mx-auto overflow-hidden ">
               This is perhaps the most delicate and graceful of the common
               ferns. Its most striking feature is its airy, almost circular
               fan-shaped fronds that are a vivid light green, held aloft by
@@ -44,14 +44,14 @@ const Hero = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="hero-bg-2 text-white text-center pt-30 md:pt-80 pb-10  space-y-6 poppins bg-cover ">
-            <h1 className="text-6xl font-bold font-bebas">
+          <div className="hero-bg-2 text-white text-center pt-40 md:pt-80 pb-10  space-y-3 poppins bg-cover ">
+            <h1 className="text-3xl font-bold font-bebas">
               "Filtered Light, Forest Floor Delight."
             </h1>
-            <h2 className="text-2xl md:text-4xl font-bold">
+            <h2 className="text-xl  font-bold">
               Wood Sorrel (Oxalis acetosella)
             </h2>
-            <p className="w-8/12 mx-auto overflow-hidden md:text-xl">
+            <p className="w-8/12 mx-auto overflow-hidden ">
               Often mistaken for clover due to its three heart-shaped leaflets,
               the Wood Sorrel is a charming inhabitant of the forest floor. It
               has a magical quality: its leaves exhibit nyctinasty, meaning they
@@ -65,12 +65,12 @@ const Hero = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="hero-bg-3 text-white text-center pt-30 md:pt-80 pb-10   space-y-6 poppins bg-cover ">
-            <h1 className="text-6xl font-bold font-bebas">
+          <div className="hero-bg-3 text-white text-center pt-40 md:pt-80 pb-10   space-y-3 poppins bg-cover ">
+            <h1 className="text-3xl font-bold font-bebas">
               "Keep Me Damp: The Art of Stillness."
             </h1>
-            <h2 className="text-2xl md:text-4xl font-bold">Moss (Bryophyta)</h2>
-            <p className="w-8/12 mx-auto overflow-hidden md:text-xl">
+            <h2 className="text-xl  font-bold">Moss (Bryophyta)</h2>
+            <p className="w-8/12 mx-auto overflow-hidden ">
               Moss is the quintessential forest texture—a dense, emerald-green,
               velvety carpet. This non-vascular plant has no true roots,
               absorbing everything it needs directly through its tiny leaves,
@@ -84,14 +84,12 @@ const Hero = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="hero-bg-4 text-white text-center pt-30 md:pt-80 pb-10 space-y-6 poppins bg-cover ">
-            <h1 className="text-6xl font-bold font-bebas">
+          <div className="hero-bg-4 text-white text-center pt-40 md:pt-80 pb-10 space-y-3 poppins bg-cover ">
+            <h1 className="text-3xl font-bold font-bebas">
               "Leafy Layers: A Tapestry of Shade."
             </h1>
-            <h2 className="text-2xl md:text-4xl font-bold">
-              Hosta (Hosta spp.)
-            </h2>
-            <p className="w-8/12 mx-auto overflow-hidden md:text-xl">
+            <h2 className="text-xl  font-bold">Hosta (Hosta spp.)</h2>
+            <p className="w-8/12 mx-auto overflow-hidden ">
               The Hosta is the champion of shade gardens, beloved primarily for
               its bold, architectural foliage. While it does produce flowers,
               its true star quality lies in the leaves, which come in a

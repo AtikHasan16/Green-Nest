@@ -56,6 +56,14 @@ const Navbar = () => {
           Contact Us
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to={"/be-volunteer"}
+          className={"btn rounded-lg border-none text-green-900 text-lg"}
+        >
+          Join Us
+        </NavLink>
+      </li>
     </>
   );
 
@@ -92,7 +100,7 @@ const Navbar = () => {
               <figure className="w-10">
                 <img src={logo} alt="" />
               </figure>
-              reen Nest
+              reen Earth
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">

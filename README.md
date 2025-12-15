@@ -1,14 +1,14 @@
-# 🌿 GreenNest – Indoor Plant Care & Store
+# 🌿 GreenEarth – Indoor Plant Care & Store
 
 **Live Link:** [https://green-nest-planet.netlify.app/](https://green-nest-planet.netlify.app/)
 
-GreenNest is a beautifully designed single-page web application (SPA) for plant lovers who wish to create greener, healthier, and more aesthetic living spaces. The platform helps users explore indoor plant collections, learn plant care tips, and book consultations with plant experts — all in one place.
+GreenEarth is a beautifully designed single-page web application (SPA) for plant lovers who wish to create greener, healthier, and more aesthetic living spaces. The platform helps users explore indoor plant collections, learn plant care tips, and book consultations with plant experts — all in one place.
 
 ---
 
 ## 🌱 Project Overview
 
-**GreenNest** provides:
+**GreenEarth** provides:
 
 - A smooth, responsive, and nature-inspired user experience.
 - Secure authentication using Firebase (Email/Password + Google Sign-In).

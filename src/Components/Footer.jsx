@@ -21,7 +21,7 @@ const Footer = () => {
             <figure className="w-15">
               <img src={logo} alt="" />
             </figure>
-            reen Nest
+            reen Earth
           </Link>
         </div>
         <nav className="grid grid-flow-col gap-4">
@@ -54,7 +54,7 @@ const Footer = () => {
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by
-            GreenNest LTD.
+            Green Earth LTD.
           </p>
         </aside>
       </footer>
