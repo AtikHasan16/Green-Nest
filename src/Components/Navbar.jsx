@@ -82,7 +82,7 @@ const Navbar = () => {
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost lg:hidden"
+                className="btn btn-ghost xl:hidden"
               >
                 <MdMenuOpen size={30}></MdMenuOpen>
               </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
               reen Earth
             </Link>
           </div>
-          <div className="navbar-center hidden lg:flex">
+          <div className="navbar-center hidden xl:flex">
             <ul className="menu menu-horizontal gap-6 ">{links}</ul>
           </div>
           <div className="navbar-end ">
