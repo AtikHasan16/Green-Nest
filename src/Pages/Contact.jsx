@@ -197,7 +197,7 @@ const Contact = () => {
               Stop by and explore our plant collection in person
             </p>
           </div>
-          <div className="bg-gray-300 rounded-xl overflow-hidden h-96 z-0 relative">
+          <div className="bg-gray-300 rounded-xl overflow-hidden h-[600px] z-0 relative">
             <Map />
           </div>
         </div>

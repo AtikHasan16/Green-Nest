@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -52,11 +52,13 @@ const Map = () => {
     }
   };
 
-  const filteredLocations = locations.filter(
-    (loc) =>
-      loc.district.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      loc.city.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredLocations = useMemo(() => {
+    return locations.filter(
+      (loc) =>
+        loc.district.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        loc.city.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  }, [locations, searchQuery]);
 
   // Default center (Dhaka)
   const position = [23.8103, 90.4125];
@@ -76,7 +78,7 @@ const Map = () => {
 
       <MapContainer
         center={position}
-        zoom={7}
+        zoom={1}
         style={{ height: "100%", width: "100%" }}
       >
         <MapUpdater locations={filteredLocations} />
