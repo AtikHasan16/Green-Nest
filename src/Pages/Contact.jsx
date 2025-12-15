@@ -41,6 +41,8 @@ const faqs = [
   },
 ];
 
+import Map from "../Components/Map";
+
 const Contact = () => {
   const [gritted, setGritted] = useState(false);
 
@@ -189,21 +191,14 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center text-white mb-12">
             <h2 className="font-bebas text-5xl md:text-6xl mb-6">
-              Visit Our Store
+              Visit Our Collection Center
             </h2>
             <p className="text-lg md:text-xl font-light">
               Stop by and explore our plant collection in person
             </p>
           </div>
-          <div className="bg-gray-300 rounded-xl overflow-hidden h-96 flex items-center justify-center">
-            <div className="text-center">
-              <p className="text-gray-700 text-lg">
-                🗺️ Map Integration Coming Soon
-              </p>
-              <p className="text-gray-600">
-                123 Green Street, Garden City, GC 12345
-              </p>
-            </div>
+          <div className="bg-gray-300 rounded-xl overflow-hidden h-96 z-0 relative">
+            <Map />
           </div>
         </div>
       </section>
