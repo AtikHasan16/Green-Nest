@@ -64,6 +64,18 @@ const Navbar = () => {
           Join Us
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to={"/ai-search"}
+          className={({ isActive }) =>
+            isActive
+              ? "btn rounded-lg border-none bg-green-100 text-green-900 text-lg"
+              : "btn rounded-lg border-none text-green-900 text-lg"
+          }
+        >
+          AI Search
+        </NavLink>
+      </li>
     </>
   );
 

@@ -14,6 +14,7 @@ import ForgetPass from "../Pages/ForgetPass";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import BeVolunteer from "../Pages/BeVolunteer";
+import AiSearch from "../Pages/AiSearch";
 
 export const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ export const router = createBrowserRouter([
       {
         path: "/be-volunteer",
         element: <BeVolunteer></BeVolunteer>,
+      },
+      {
+        path: "/ai-search",
+        element: <AiSearch></AiSearch>,
       },
       {
         path: "/details/:id",
