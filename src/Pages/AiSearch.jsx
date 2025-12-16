@@ -50,6 +50,9 @@ const AiSearch = () => {
     if (apiKey) {
       localStorage.setItem("apiKey", JSON.stringify(apiKey));
       toast.success("API Key added successfully!");
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
     }
   };
 

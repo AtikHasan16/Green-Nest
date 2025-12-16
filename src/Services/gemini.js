@@ -33,7 +33,7 @@ export const identifyPlant = async (file) => {
         {
           parts: [
             {
-              text: 'Identify this plant. Provide the name, scientific name, description, and care instructions. Return the response in JSON format with the following structure: { "name": "Plant Name", "scientific_name": "Scientific Name", "description": "Brief description...", "care_instructions": "Care details..." } Do not include markdown formatting like ```json',
+              text: 'Identify this plant. Provide the name, scientific name, description (in Bangla), and care instructions (in Bangla). Return the response in JSON format with the following structure: { "name": "Plant Name", "scientific_name": "Scientific Name", "description": "Brief description in Bangla...", "care_instructions": "Care details in Bangla..." } Do not include markdown formatting like ```json',
             },
             imagePart,
           ],
