@@ -56,7 +56,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/ai-search",
-        element: <AiSearch></AiSearch>,
+        element: (
+          <PrivateRouter>
+            <AiSearch></AiSearch>
+          </PrivateRouter>
+        ),
       },
       {
         path: "/details/:id",
