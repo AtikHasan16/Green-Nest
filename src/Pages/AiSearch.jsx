@@ -10,6 +10,12 @@ const AiSearch = () => {
   const [previewUrl, setPreviewUrl] = useState(null);
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [hasApiKey, setHasApiKey] = useState(false);
+
+  React.useEffect(() => {
+    const key = localStorage.getItem("apiKey");
+    if (key) setHasApiKey(true);
+  }, []);
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -73,82 +79,100 @@ const AiSearch = () => {
         <div className="w-full lg:w-1/2">
           <div className="card bg-base-100 shadow-xl border-t-4 border-green-600">
             <div className="card-body">
-              <form onSubmit={handleAddApiKey}>
-                <h1 className="text-2xl font-bold text-green-800">
-                  Add API Key
-                </h1>
-                <p className="text-gray-600">
-                  Please add your API key to use this feature
-                </p>
-                <input
-                  type="text"
-                  placeholder="API Key"
-                  name="apiKey"
-                  className="input input-bordered w-full mt-4 rounded-lg border-green-600 bg-green-50"
-                  required
-                />
-                <button type="submit" className="btn-1 btn my-3 ">
-                  Add API Key
-                </button>
-              </form>
-              <h2 className="card-title text-2xl mb-4 text-green-800">
-                Upload Photo
-              </h2>
+              {!hasApiKey ? (
+                <form onSubmit={handleAddApiKey}>
+                  <h1 className="text-2xl font-bold text-green-800">
+                    Add API Key
+                  </h1>
+                  <p className="text-gray-600">
+                    Please add your API key to use this feature
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="API Key"
+                    name="apiKey"
+                    className="input input-bordered w-full mt-4 rounded-lg border-green-600 bg-green-50"
+                    required
+                  />
+                  <button type="submit" className="btn-1 btn my-3 ">
+                    Add API Key
+                  </button>
+                </form>
+              ) : (
+                <>
+                  <div className="flex justify-between items-center mb-4">
+                    <h2 className="card-title text-2xl text-green-800">
+                      Upload Photo
+                    </h2>
+                    <button
+                      onClick={() => {
+                        localStorage.removeItem("apiKey");
+                        window.location.reload();
+                      }}
+                      className="btn btn-xs btn-error text-white"
+                    >
+                      Remove Key
+                    </button>
+                  </div>
 
-              <div className="form-control w-full">
-                <label className="label">
-                  <span className="label-text">Select an image</span>
-                </label>
-                <div
-                  className={`border-3 border-dashed rounded-xl p-10 flex flex-col items-center justify-center cursor-pointer transition-all
-                      ${
-                        previewUrl
-                          ? "border-green-500 bg-green-50"
-                          : "border-gray-300 hover:border-green-400 hover:bg-base-200"
+                  <div className="form-control w-full">
+                    <label className="label">
+                      <span className="label-text">Select an image</span>
+                    </label>
+                    <div
+                      className={`border-3 border-dashed rounded-xl p-10 flex flex-col items-center justify-center cursor-pointer transition-all
+                          ${
+                            previewUrl
+                              ? "border-green-500 bg-green-50"
+                              : "border-gray-300 hover:border-green-400 hover:bg-base-200"
+                          }
+                        `}
+                      onClick={() =>
+                        document.getElementById("file-upload").click()
                       }
-                    `}
-                  onClick={() => document.getElementById("file-upload").click()}
-                >
-                  {previewUrl ? (
-                    <img
-                      src={previewUrl}
-                      alt="Preview"
-                      className="max-h-64 rounded-lg object-contain"
+                    >
+                      {previewUrl ? (
+                        <img
+                          src={previewUrl}
+                          alt="Preview"
+                          className="max-h-64 rounded-lg object-contain"
+                        />
+                      ) : (
+                        <>
+                          <MdCloudUpload className="text-6xl text-gray-400 mb-2" />
+                          <p className="font-semibold text-gray-500">
+                            Click to upload image
+                          </p>
+                          <p className="text-xs text-gray-400">
+                            JPG, PNG supported
+                          </p>
+                        </>
+                      )}
+                    </div>
+                    <input
+                      type="file"
+                      id="file-upload"
+                      className="hidden"
+                      accept="image/*"
+                      onChange={handleFileChange}
                     />
-                  ) : (
-                    <>
-                      <MdCloudUpload className="text-6xl text-gray-400 mb-2" />
-                      <p className="font-semibold text-gray-500">
-                        Click to upload image
-                      </p>
-                      <p className="text-xs text-gray-400">
-                        JPG, PNG supported
-                      </p>
-                    </>
-                  )}
-                </div>
-                <input
-                  type="file"
-                  id="file-upload"
-                  className="hidden"
-                  accept="image/*"
-                  onChange={handleFileChange}
-                />
-              </div>
+                  </div>
 
-              <div className="card-actions justify-end mt-6">
-                <button
-                  className="btn btn-primary bg-green-700 hover:bg-green-800 border-none text-white w-full text-lg"
-                  onClick={handleIdentify}
-                  disabled={loading || !selectedFile}
-                >
-                  {loading ? (
-                    <ClipLoader size={20} color="#ffffff" />
-                  ) : (
-                    "Identify Plant"
-                  )}
-                </button>
-              </div>
+                  <div className="card-actions justify-end mt-6">
+                    <button
+                      className="btn btn-primary bg-green-700 hover:bg-green-800 border-none text-white w-full text-lg"
+                      onClick={handleIdentify}
+                      disabled={loading || !selectedFile}
+                    >
+                      {loading ? (
+                        <ClipLoader size={20} color="#ffffff" />
+                      ) : (
+                        "Identify Plant"
+                      )}
+                    </button>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
