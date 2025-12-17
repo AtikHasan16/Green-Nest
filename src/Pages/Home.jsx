@@ -13,7 +13,7 @@ const Home = () => {
   //   console.log(plantDataSliced);
   return (
     <>
-      <title>Green Earth - Home</title>
+      <title>Leaf Store - Home</title>
       <div className="min-h-screen poppins">
         <div>
           <Hero></Hero>

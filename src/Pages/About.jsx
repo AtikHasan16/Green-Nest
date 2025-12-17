@@ -56,7 +56,7 @@ const About = () => {
             <div className="h-1 w-24 bg-green-600 mx-auto"></div>
           </div>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-center mb-8">
-            At Green Earth, we're dedicated to making plant parenting accessible,
+            At Leaf Store, we're dedicated to making plant parenting accessible,
             convenient, and successful for everyone. In a concrete world, we
             bring the green to you.
           </p>
@@ -75,7 +75,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-bebas text-5xl md:text-6xl text-green-900 mb-6">
-              Why Choose Green Earth?
+              Why Choose Leaf Store?
             </h2>
             <div className="h-1 w-24 bg-green-600 mx-auto"></div>
           </div>
@@ -130,7 +130,7 @@ const About = () => {
           </p>
           <p className="text-lg md:text-xl font-light">
             Let's grow something beautiful together. Join thousands of happy
-            gardeners who've transformed their spaces with Green Earth.
+            gardeners who've transformed their spaces with Leaf Store.
           </p>
         </div>
       </section>

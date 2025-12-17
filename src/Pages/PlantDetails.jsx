@@ -45,7 +45,7 @@ const PlantDetailPage = () => {
 
   return (
     <>
-      <title>Green Earth - Plant Details</title>
+      <title>Leaf Store - Plant Details</title>
       <div className="min-h-screen  poppins py-16">
         <div className="container mx-auto px-4">
           <div className="  transition">

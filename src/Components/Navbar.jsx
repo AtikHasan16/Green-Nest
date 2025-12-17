@@ -112,7 +112,7 @@ const Navbar = () => {
               <figure className="w-10">
                 <img src={logo} alt="" />
               </figure>
-              reen Earth
+              Leaf Store
             </Link>
           </div>
           <div className="navbar-center hidden xl:flex">

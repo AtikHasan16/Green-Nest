@@ -19,9 +19,9 @@ const Footer = () => {
             className="btn md:btn-xl text-white bg-transparent border-none shadow-none text-4xl flex justify-center items-center"
           >
             <figure className="w-15">
-              <img src={logo} alt="" />
+              <img src={logo} alt="" className="rounded-full" />
             </figure>
-            reen Earth
+            Leaf Store
           </Link>
         </div>
         <nav className="grid grid-flow-col gap-4">
@@ -53,8 +53,8 @@ const Footer = () => {
         </nav>
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by
-            Green Earth LTD.
+            Copyright © {new Date().getFullYear()} - All right reserved by Leaf
+            Store LTD.
           </p>
         </aside>
       </footer>

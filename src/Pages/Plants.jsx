@@ -34,7 +34,7 @@ const Plants = () => {
 
   return (
     <>
-      <title>Green Earth - Plants</title>
+      <title>Leaf Store - Plants</title>
 
       <div className="p-4 md:p-10 ">
         <Container>

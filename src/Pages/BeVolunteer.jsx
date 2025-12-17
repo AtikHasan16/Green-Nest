@@ -5,7 +5,7 @@ import { FaCertificate, FaLeaf, FaTruck, FaHandsHelping } from "react-icons/fa";
 const BeVolunteer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success("Welcome to the Green Earth Team! Please fill-up the form.");
+    toast.success("Welcome to the Leaf Store Team! Please fill-up the form.");
     e.target.reset();
     setTimeout(() => {
       window.open("https://forms.gle/2xdpm6ACJHn2q3Yc8");
@@ -37,7 +37,7 @@ const BeVolunteer = () => {
 
   return (
     <>
-      <title>Green Earth - Be a Volunteer</title>
+      <title>Leaf Store - Be a Volunteer</title>
       <div className="min-h-screen poppins bg-white">
         {/* Hero Section */}
         <section className="relative h-[400px] flex items-center justify-center bg-green-900 text-white overflow-hidden">
@@ -61,7 +61,7 @@ const BeVolunteer = () => {
           </h2>
           <div className="h-1 w-24 bg-green-600 mx-auto mb-8"></div>
           <p className="text-gray-600 text-lg leading-relaxed">
-            At Green Earth, volunteers are the heart of our mission. Whether
+            At Leaf Store, volunteers are the heart of our mission. Whether
             you're passionate about environmental conservation, love gardening,
             or simply want to give back to your society, there's a place for you
             here. Connect with nature, meet like-minded people, and make a
