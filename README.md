@@ -5,6 +5,9 @@
 LeafStore is a beautifully designed single-page web application (SPA) for plant lovers who wish to create greener, healthier, and more aesthetic living spaces. The platform helps users explore indoor plant collections, identify unknown plants using AI, learn plant care tips, and book consultations with plant experts.
 
 ---
+## Preview --
+
+![leafStore banner](https://raw.githubusercontent.com/AtikHasan16/GitHub-banner/refs/heads/main/green-earth-initiative-ai.netlify.app_ai-search.png)
 
 ## 🌱 Project Overview
 
